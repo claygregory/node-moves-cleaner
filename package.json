@@ -1,0 +1,18 @@
+{
+  "name": "@claygregory/moves-cleaner",
+  "version": "1.0.0",
+  "description": "Repairs common quirks of Moves App location history",
+  "author": "Clay Gregory <clay@claygregory.com> (https://claygregory.com/)",
+  "repository": "claygregory/node-moves-cleaner",
+  "homepage": "https://github.com/claygregory/node-moves-cleaner",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "fast-haversine": "^1.0.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.13.1"
+  }
+}
