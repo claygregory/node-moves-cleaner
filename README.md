@@ -9,6 +9,12 @@ recurring oddities I attempt to correct with this utility. Namely:
  * Other time gaps inexplicably appear between segments, absent an 'off' segment
  * Not specifically a problem, but multple consecutive movements (e.g. walking → transport → walking) are merged as activities under a single 'move' segment. I prefer these separated into separate segments to simplify analysis.
 
+## Installation
+
+```bash
+npm install --save @claygregory/moves-cleaner
+```
+
 ## Usage
 
  For most applications, just call the single `apply` method on an array of segments.
