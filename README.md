@@ -17,7 +17,8 @@ npm install --save @claygregory/moves-cleaner
 
 ## Usage
 
- For most applications, just call the single `apply` method on an array of segments.
+ For most applications, just call the single `apply` method on an array of segments. This will apply all of the normalization
+ functions in one go.
 
  ```javascript
 const MovesCleaner = require('@claygregory/moves-cleaner');
@@ -32,7 +33,7 @@ const normalizedSegments = movesCleaner.apply([
 
 ### Additional Methods
 
-Individual normalization steps can be applied individually, which are typically applied in succession via `apply`. These include:
+Normalization steps can also be applied individually. These include:
 
 #### Close Gaps
 
