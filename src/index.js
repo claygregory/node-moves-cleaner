@@ -72,11 +72,12 @@ class MovesCleaner {
 
       const merged_trackPoints = _(a.trackPoints || [])
         .concat(b.trackPoints || [])
+        .sortBy('time')
         .value();
 
-      return _.merge({}, a, {
+      return _.assign({}, a, {
         endTime: b.endTime,
-        duration: moment.duration(b.endTime, a.startTime).asSeconds(),
+        duration: moment(b.endTime).diff(a.startTime, 'second'),
         distance: MovesCleaner._path_distance(merged_trackPoints),
         trackPoints: merged_trackPoints
       });
@@ -91,7 +92,7 @@ class MovesCleaner {
         .uniqWith(MovesCleaner._is_same_segment)
         .value();
 
-      return _.merge({}, a, {
+      return _.assign({}, a, {
         endTime: b.endTime,
         activities: merged_activities
       });
