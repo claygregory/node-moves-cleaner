@@ -1,6 +1,6 @@
 'use strict';
 
-const distance = require('fast-haversine');
+const distance = require('haversine-distance');
 const moment = require('moment');
 const _ = require('lodash');
 
