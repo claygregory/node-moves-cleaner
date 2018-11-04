@@ -13,12 +13,12 @@
   },
   "dependencies": {
     "haversine-distance": "^1.1.4",
-    "lodash": "^4.17.10",
-    "moment": "^2.22.1"
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
-    "eslint": "^4.19.1"
+    "eslint": "^5.8.0"
   }
 }
