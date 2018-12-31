@@ -76,7 +76,7 @@ class MovesCleaner {
         .value();
 
       return _.assign({}, a, {
-        endTime: b.endTime,
+        endTime: b.endTime || a.endTime,
         duration: moment(b.endTime).diff(a.startTime, 'second'),
         distance: MovesCleaner._path_distance(merged_trackPoints),
         trackPoints: merged_trackPoints
@@ -93,7 +93,7 @@ class MovesCleaner {
         .value();
 
       return _.assign({}, a, {
-        endTime: b.endTime,
+        endTime: b.endTime || a.endTime,
         activities: merged_activities
       });
     });
